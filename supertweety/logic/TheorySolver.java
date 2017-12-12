@@ -136,7 +136,7 @@ public class TheorySolver {
             }
             state.addAll(deterministic);
 
-            Set<Clause> violatedRules = Sugar.setFromCollections(findViolatedRules(Sugar.union(rules, initRules), state));
+            Set<Clause> violatedRules = Sugar.setFromCollections(findViolatedRules(rules, state));
 
             violatedRules = Sugar.<Clause, Clause>funcallAndRemoveNulls(violatedRules, new Sugar.Fun<Clause, Clause>() {
                 @Override
@@ -150,6 +150,7 @@ public class TheorySolver {
                 }
             });
 
+            activeRules.addAll(initRules);
             activeRules.addAll(violatedRules);
 
             iteration++;
@@ -269,7 +270,7 @@ public class TheorySolver {
 //                    }
 //                    int numViolatedRules = 0;
 //                    for (Set<Literal> solution : candidateSolutions) {
-//                        Set<Clause> violatedRules = Sugar.setFromCollections(findViolatedRules(Sugar.union(rules, initRules), Sugar.union(solution, deterministic)));
+//                        Set<Clause> violatedRules = Sugar.setFromCollections(findViolatedRules(rules, Sugar.union(solution, deterministic)));
 //                        violatedRules = Sugar.<Clause, Clause>funcallAndRemoveNulls(violatedRules, new Sugar.Fun<Clause, Clause>() {
 //                            @Override
 //                            public Clause apply(Clause clause) {
@@ -286,6 +287,7 @@ public class TheorySolver {
 //                        } else {
 //                            numViolatedRules += violatedRules.size();
 //                            activeRules.addAll(violatedRules);
+//                            activeRules.addAll(initRules);
 //                        }
 //                    }
 //                    iteration++;

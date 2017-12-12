@@ -122,6 +122,9 @@ public class PossibilisticUtils {
 
 
     public static PossibilisticLogicTheory removeDrownedLevels(PossibilisticLogicTheory possibilisticLogicTheory){
+        if (possibilisticLogicTheory.weights().isEmpty()){
+            return possibilisticLogicTheory;
+        }
         Pair<Set<Literal>,Double> solution = possibilisticLogicTheory.solve(Sugar.<Literal>set());
         if (possibilisticLogicTheory.minWeight() == solution.s){
             return possibilisticLogicTheory;

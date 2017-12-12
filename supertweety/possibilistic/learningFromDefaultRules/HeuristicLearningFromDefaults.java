@@ -73,7 +73,7 @@ public class HeuristicLearningFromDefaults {
 
             Clause bestCandidateClause = selectBest(candidateClauses, bestStratification, this.defaults, this.nondefaults, this.hardRules, startTime, timeout);
 
-            if (System.currentTimeMillis()-startTime >= timeout){
+            if (System.currentTimeMillis()-startTime >= timeout || bestCandidateClause == null){
                 break outerLoop;
             }
 

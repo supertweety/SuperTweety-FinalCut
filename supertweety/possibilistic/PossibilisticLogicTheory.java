@@ -842,8 +842,8 @@ public class PossibilisticLogicTheory implements DiscreteProbabilityDistribution
         plt.addRule(Clause.parse("a(),b()"), 0.95);
         plt.addAdditionalGroundAtom(Literal.parseLiteral("c()"));
 
-        PossibilisticLogicTheory plt2 = PossibilisticLogicTheory.fromStratification(plt.toLevelList());
-        PossibilisticLogicTheory mlplt = plt2.maximumLikelihoodWeightEstimation(dataset, Globals.modelCounterFactory.newInstance());
+        //PossibilisticLogicTheory plt2 = PossibilisticLogicTheory.fromStratification(plt.toLevelList());
+        PossibilisticLogicTheory mlplt = plt.maximumLikelihoodWeightEstimation(dataset, Globals.modelCounterFactory.newInstance());
 
         System.out.println(mlplt);
 
@@ -852,6 +852,8 @@ public class PossibilisticLogicTheory implements DiscreteProbabilityDistribution
         );
 
         System.out.println(mlplt.probability(query, mc));
+
+
     }
 
 }
