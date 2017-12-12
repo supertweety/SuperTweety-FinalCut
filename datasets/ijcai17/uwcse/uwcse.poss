@@ -1,0 +1,174 @@
+---------------------
+Hard rules:
+!tempAdvisedBy(V1, V2), !advisedBy(V1, V4)
+!ta(V1, V3, V4), !student(V1)
+!taughtBy(V3, V3, V3)
+student(V1), !advisedBy(V1, V2)
+!student(V1), !professor(V1)
+!ta(V2, V2, V3)
+!ta(V3, V2, V3)
+!ta(V1, V3, V4), !professor(V1)
+!publication(V1, V2), !publication(V2, V1)
+!taughtBy(V1, V2, V3), !ta(V1, V4, V2)
+!taughtBy(V1, V2, V3), !ta(V2, V4, V1)
+!taughtBy(V1, V2, V3), !taughtBy(V2, V4, V3)
+!projectMember(V2, V2)
+!projectMember(V1, V2), !taughtBy(V3, V1, V5)
+!taughtBy(V3, V2, V3)
+professor(V2), !tempAdvisedBy(V1, V2)
+!ta(V3, V2, V5), !ta(V1, V2, V3)
+!taughtBy(V1, V2, V3), !ta(V1, V2, V3)
+!taughtBy(V1, V2, V3), !ta(V3, V2, V1)
+!taughtBy(V2, V2, V3)
+!ta(V3, V3, V3)
+!Post_Quals(X), !Post_Generals(X)
+!projectMember(V1, V2), !ta(V3, V4, V1)
+!taughtBy(V1, V2, V3), !taughtBy(V1, V3, V5)
+!taughtBy(V1, V2, V3), !taughtBy(V3, V1, V5)
+!publication(V2, V2)
+!ta(V2, V4, V5), !taughtBy(V1, V2, V3)
+!taughtBy(V2, V3, V1), !professor(V1)
+!projectMember(V1, V2), !ta(V1, V4, V5)
+!taughtBy(V2, V1, V4), !Post_Quals(V1)
+!projectMember(V1, V2), !taughtBy(V1, V2, V5)
+!taughtBy(V1, V2, V3), !taughtBy(V2, V3, V5)
+!taughtBy(V1, V2, V3), !taughtBy(V3, V2, V5)
+!taughtBy(V1, V2, V3), !taughtBy(V6, V3, V5)
+!taughtBy(V1, V2, V3), !taughtBy(V6, V3, V1)
+!taughtBy(V3, V1, V2), !publication(V1, V2)
+!taughtBy(V3, V2, V1), !publication(V1, V2)
+!tempAdvisedBy(V1, V2), !advisedBy(V1, V2)
+!ta(V3, V2, V1), !publication(V1, V2)
+!ta(V2, V3, V1), !professor(V1)
+!ta(V1, V3, V3)
+!ta(V1, V2, V5), !publication(V1, V2)
+!ta(V2, V3, V1), !student(V1)
+!projectMember(V1, V2), !publication(V1, V2)
+!taughtBy(V1, V2, V3), !taughtBy(V2, V4, V5)
+!taughtBy(V1, V2, V3), !ta(V3, V4, V1)
+!taughtBy(V1, V4, V2), !publication(V1, V2)
+!taughtBy(V2, V4, V1), !publication(V1, V2)
+!advisedBy(V2, V2)
+!Pre_Quals(V1), !Post_Generals(V1)
+!Faculty_adjunct(X), !Faculty_affiliate(X)
+!projectMember(V1, V2), !taughtBy(V3, V2, V1)
+!publication(V1, V2), !taughtBy(V2, V4, V5)
+!taughtBy(V1, V2, V3), !taughtBy(V2, V1, V5)
+!projectMember(V1, V2), !projectMember(V1, V4)
+!taughtBy(V1, V2, V3), !ta(V3, V4, V5)
+!projectMember(V1, V2), !professor(V1)
+student(V1), !Post_Quals(V1)
+!projectMember(V1, V2), !student(V1)
+!publication(V1, V2), !taughtBy(V1, V2, V5)
+!publication(V1, V2), !taughtBy(V2, V1, V5)
+Faculty(V1), !projectMember(V2, V1)
+professor(V2), !advisedBy(V1, V2)
+!projectMember(V1, V2), !taughtBy(V1, V4, V5)
+!publication(V2, V4), !publication(V1, V2)
+!ta(V3, V4, V1), !publication(V1, V2)
+!taughtBy(V3, V1, V5), !publication(V1, V2)
+!projectMember(V1, V2), !taughtBy(V3, V4, V1)
+!taughtBy(V1, V2, V3), !ta(V2, V4, V3)
+!taughtBy(V1, V2, V3), !ta(V3, V4, V2)
+!Faculty(X), !Faculty_adjunct(X)
+!taughtBy(V1, V2, V3), !taughtBy(V6, V3, V2)
+!taughtBy(V1, V2, V3), !taughtBy(V3, V4, V5)
+!Pre_Quals(V1), !Post_Quals(V1)
+!ta(V1, V4, V2), !publication(V1, V2)
+!ta(V2, V4, V1), !publication(V1, V2)
+!ta(V3, V4, V1), !ta(V1, V2, V3)
+!taughtBy(V1, V3, V2), !taughtBy(V1, V2, V3)
+!taughtBy(V2, V1, V3), !taughtBy(V1, V2, V3)
+!taughtBy(V2, V3, V1), !taughtBy(V1, V2, V3)
+!taughtBy(V3, V2, V1), !taughtBy(V1, V2, V3)
+professor(X), !Faculty_affiliate(X)
+!ta(V3, V2, V5), !taughtBy(V1, V2, V3)
+!professor(V1), !publication(V1, V2)
+!tempAdvisedBy(V2, V1), !Faculty_adjunct(V1)
+!taughtBy(V1, V4, V5), !publication(V1, V2)
+!taughtBy(V1, V2, V3), !student(V3)
+student(X), !Pre_Quals(X)
+!projectMember(V1, V4), !publication(V1, V2)
+!student(V1), !publication(V1, V2)
+!taughtBy(V1, V2, V3), !ta(V6, V2, V3)
+!ta(V2, V4, V5), !publication(V1, V2)
+!taughtBy(V1, V2, V3), !student(V1)
+!taughtBy(V1, V2, V3), !ta(V6, V4, V1)
+professor(X), !Faculty_adjunct(X)
+!taughtBy(V1, V2, V3), !ta(V6, V4, V2)
+professor(V1), !Faculty(V1)
+!Faculty(X), !Faculty_affiliate(X)
+!projectMember(V2, V4), !publication(V1, V2)
+!ta(V1, V2, V3), !ta(V3, V4, V5)
+!ta(V1, V2, V3), !ta(V6, V2, V3)
+!professor(V1), !taughtBy(V1, V3, V4)
+!ta(V3, V4, V2), !publication(V1, V2)
+student(V1), !ta(V2, V1, V4)
+!tempAdvisedBy(V1, V2), !tempAdvisedBy(V1, V4)
+!taughtBy(V3, V4, V2), !publication(V1, V2)
+!ta(V1, V4, V5), !publication(V1, V2)
+!tempAdvisedBy(V2, V2)
+student(V1), !tempAdvisedBy(V1, V2)
+!taughtBy(V1, V2, V3), !ta(V6, V2, V1)
+!tempAdvisedBy(V1, V2), !Post_Generals(V1)
+!taughtBy(V1, V2, V3), !taughtBy(V3, V4, V1)
+!ta(V1, V2, V3), !ta(V3, V2, V1)
+!publication(V1, V2), !taughtBy(V3, V4, V1)
+student(X), !Post_Generals(X)
+!taughtBy(V1, V3, V3)
+---------------------
+Level -8.640419332972672E-10
+!tempAdvisedBy(V3, V1), !publication(V0, V3), publication(V0, V1), !@alldiff(V0, V1, V3)
+---------------------
+Level -2.711883703178848E-9
+!tempAdvisedBy(V0, V3), !tempAdvisedBy(V4, V3), !Post_Quals(V4), Post_Quals(V0), !@alldiff(V0, V3, V4)
+---------------------
+Level -5.254137378324325E-9
+!Faculty_affiliate(V1), !publication(V3, V1), !publication(V3, V0), advisedBy(V0, V1), !@alldiff(V0, V1, V3)
+---------------------
+Level -7.216309867165292E-9
+!publication(V2, V0), !advisedBy(V0, V4), Post_Generals(V0), !@alldiff(V0, V2, V4)
+---------------------
+Level -9.021813619690055E-9
+!advisedBy(V2, V0), !Faculty_adjunct(V4), !advisedBy(V2, V4), Faculty_adjunct(V0), !@alldiff(V0, V2, V4)
+---------------------
+Level -1.2831363806783494E-8
+!taughtBy(V2, V0, V4), !student(V0), Post_Generals(V0), !@alldiff(V0, V2, V4)
+---------------------
+Level -1.778200479750804E-8
+!advisedBy(V0, V3), !projectMember(V4, V3), Post_Quals(V0), !@alldiff(V0, V3, V4)
+---------------------
+Level -2.4011121816892032E-8
+!publication(V3, V1), !Faculty_adjunct(V1), !publication(V3, V0), advisedBy(V0, V1), !@alldiff(V0, V1, V3)
+---------------------
+Level -3.0288641755981043E-8
+!advisedBy(V0, V3), !Post_Quals(V4), !advisedBy(V4, V3), Post_Quals(V0), !@alldiff(V0, V3, V4)
+---------------------
+Level -3.714077689943839E-8
+!Faculty_affiliate(V4), !Faculty_affiliate(V1), !publication(V0, V4), publication(V0, V1), !@alldiff(V0, V1, V4)
+---------------------
+Level -4.0399410479591565E-8
+!advisedBy(V0, V3), !Post_Generals(V4), !advisedBy(V4, V3), Post_Generals(V0), !@alldiff(V0, V3, V4)
+---------------------
+Level -6.476710040306189E-8
+!tempAdvisedBy(V2, V0), Faculty(V0), !@alldiff(V0, V2, V3)
+---------------------
+Level -3.240638869203198E-7
+!advisedBy(V0, V3), !Faculty_adjunct(V3), Post_Quals(V0), !@alldiff(V0, V3, V4)
+---------------------
+Level -4.0342292737060807E-7
+!advisedBy(V2, V0), Faculty(V0), !@alldiff(V0, V2, V3)
+---------------------
+Level -6.673228066459667E-7
+!Faculty_adjunct(V4), !Faculty_adjunct(V1), !publication(V0, V4), publication(V0, V1), !@alldiff(V0, V1, V4)
+---------------------
+Level -7.213615532976738E-7
+!tempAdvisedBy(V0, V3), Pre_Quals(V0), !@alldiff(V0, V3, V4)
+---------------------
+Level -7.240473135521215E-7
+!publication(V2, V4), !Pre_Quals(V4), !publication(V2, V0), Faculty_adjunct(V0), !@alldiff(V0, V2, V4)
+---------------------
+Level -4.387586899039564E-6
+!advisedBy(V0, V3), Post_Quals(V0), !@alldiff(V0, V3, V4)
+
+falsity weight: -6.208908670638259E-4
