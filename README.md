@@ -280,7 +280,7 @@ Btw. if you are interested in "lifted" version of rational, lexicographic and ma
 
 **6. Learning Relational Possibilistic Logic Theories (IJCAI'17)**
 
-The codes for learning relational possibilistic logic theories (as in our IJCAI'17 paper) are in the package *supertweety.shorty*. The datasets are available from https://github.com/supertweety/SuperTweety-FinalCut/tree/master/datasets/ijcai17. 
+The codes for learning relational possibilistic logic theories (as in our IJCAI'17 paper) are in the package https://github.com/supertweety/SuperTweety-FinalCut/tree/master/supertweety/shorty. The datasets are available from https://github.com/supertweety/SuperTweety-FinalCut/tree/master/datasets/ijcai17. 
 
 More details will likely be added here in the future.
 
