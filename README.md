@@ -46,7 +46,12 @@ System.out.println("A most plausible world: "+solution.r+", consistency level: "
 
 ```
 
-When we run the above code, we get the output: **"A most plausible world: [penguin(tweety), bird(tweety)], consistency level: 1.0."**
+When we run the above code, we get the output: 
+
+```
+A most plausible world: [penguin(tweety), bird(tweety)], consistency level: 1.0."
+```
+
 Here the solution contains only the ground atoms (literals) that are true in the returned possible world, the ground atoms that are false in the possible world are those that are not contained in the returned set (this is useful in sparse domains).
 
 To check if the literal *!flies(tweety)* is entailed (by possibilistic entailment relation \vdash_{poss}), we can use the following piece of code:
